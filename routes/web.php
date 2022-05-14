@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts.app');
 });
+
+Route::get('/gestor', function () {
+    return view('gestor.index');
+});
