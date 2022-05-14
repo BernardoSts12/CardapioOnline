@@ -1,5 +1,6 @@
 Cardápio Online
-Projeto para estudo pessoal, não será usado comercialmente.
+
+Projeto para estudo pessoal, não será usado comercialmente
 
 Status: Em desenvolvimento
 
