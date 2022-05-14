@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+:root {
+    --main-bg-color: #113E21;
+    --secondary-bg-color: #B38B59;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    color: #DEE2E6;
+}
+
+
+/* category */
+
+.category-title h3 {
+    margin: 0 50px;
+    color: var(--main-bg-color);
+    font-size: 40px;
+    font-family: 'Acme';
+}
+
+.category-title span {
+    color: var(--secondary-bg-color);
+    font-family: 'Acme';
+}
+
+.carousel-slick {
+    margin: 0 50px;
+}
+
+.category-item {
+    height: 28px;
+    border: 1.5px solid var(--main-bg-color);
+    margin: 8px;
+    padding: 0 16px;
+    border-radius: 3em;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.category-item:hover {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+.category-item:focus {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+
+/*cardapio*/
+
+.cardapio-container {
+    margin: 10px 50px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cardapio-card {
+    flex: 220px 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #FEFEFE;
+    min-height: 240px;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.img-container {
+    position: relative;
+    width: 150px;
+    margin: 20px;
+}
+
+.cardapio-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.adicionar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    color: white;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.cardapio-content {
+    border-top: 1px solid #DEE2E6;
+    display: flex;
+    width: 80%;
+    position: relative;
+}
+
+.cardapio-content p,
+.cardapio-content span {
+    font-size: 14px;
+    margin-top: 8px;
+    max-width: 70%;
+}
+
+.cardapio-content span {
+    font-weight: 500;
+}
+
+.cardapio-content span {
+    position: absolute;
+    right: 0;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    background-color: #FEFEFE;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-top: 3px solid var(--secondary-bg-color);
+    border-bottom: 3px solid var(--secondary-bg-color);
+}
+
+.pedido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pedido h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pedido p {
+    font-size: 14px;
+    max-width: 65%;
+}
+
+.pedido-preco {
+    color: var(--main-bg-color);
+}
+
+.pedido-preco-total {
+    color: var( --main-bg-color);
+}
+
+.total p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
