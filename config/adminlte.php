@@ -241,21 +241,27 @@ return [
             // 'type' => 'sidebar-menu-search',
             // 'text' => 'search',
         ],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
+        // [
+        //     'text' => 'blog',
+        //     'url'  => 'admin/blog',
+        //     'can'  => 'manage-blog',
+        // ],
         [
             'text'        => 'Categorias',
-            'url'         => 'admin/pages',
+            'url'         => '/gestor/categorias',
             'icon'        => 'far fa-fw fa-file',
             // 'label'       => ,
             // 'label_color' => 'success',
         ],
-        
+        //  ['header' => 'labels'],
         [
             'text' => 'Cardápio',
+            'url'  => 'admin/settings',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+
+        [
+            'text' => 'Configurações',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
         ],

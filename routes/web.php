@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/gestor', function () {
     return view('gestor.index');
 });
+
+Route::get('/gestor/categorias', function () {
+    return view('gestor.categorias.index');
+});
