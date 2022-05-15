@@ -1,6 +1,16 @@
 <div>
     <div class="col-sm-12">
 
+        <br>
+
+        <form method="post" wire:submit.prevent="create">
+            
+            <input type="text" class="form-control" id="nome" name="nome" wire:model="nome">
+            <button type="submit" class="btn btn-success">Adicionar</button>
+        </form>
+
+
+        <br>
         <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" role="grid" aria-describedby="example2_info">
             <thead>
                 <tr role="row">
@@ -11,9 +21,9 @@
             <tbody>
                 @foreach ($categorias as $categorias)
                 <tr class="odd">
-                    <td class="dtr-control sorting_1" tabindex="0">{{$categorias}}</td>
+                    <td class="dtr-control sorting_1" tabindex="0">{{$categorias->nome}}</td>
                     <td>
-                        <button type="button" class="btn btn-danger">Deletar</button>
+                        <button type="button" wire:click.prevent="delete({{$categorias->id}})" class="btn btn-danger">Deletar</button>
                     </td>
                 </tr>
                 @endforeach

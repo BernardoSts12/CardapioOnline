@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Categorias;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,5 @@ Route::get('/gestor', function () {
     return view('gestor.index');
 });
 
-Route::get('/gestor/categorias', function () {
-    return view('gestor.categorias.index');
-});
+
+Route::get('/gestor/categorias', Categorias::class);
