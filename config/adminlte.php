@@ -255,8 +255,8 @@ return [
         ],
         //  ['header' => 'labels'],
         [
-            'text' => 'Cardápio',
-            'url'  => 'admin/settings',
+            'text' => 'Pratos do Cardápio',
+            'url'  => '/gestor/pratos',
             'icon' => 'fas fa-fw fa-user',
         ],
 
