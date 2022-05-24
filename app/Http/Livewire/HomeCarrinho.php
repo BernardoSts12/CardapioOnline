@@ -8,18 +8,24 @@ use App\Models\Carrinho;
 class HomeCarrinho extends Component
 {
     public $total = 0;
+    public $carrinho;
 
-    public function render()
-    {
-        $carrinho = Carrinho::where([
+    public function __construct(){ 
+        $this->carrinho = Carrinho::where([
             ['user_id', 1]
         ])->get();
 
-        foreach ($carrinho as $itens){
+        foreach ($this->carrinho as $itens){
             $this->total = $this->total + $itens->valor;
         }
-        
-        return view('livewire.home-carrinho',['carrinho' => $carrinho]);
+    }
+
+    public function render()
+    {
+        $this->carrinho = Carrinho::where([
+            ['user_id', 1]
+        ])->get();
+        return view('livewire.home-carrinho');
     }
 
     public function delete($id)
@@ -29,5 +35,8 @@ class HomeCarrinho extends Component
         $this->total = $this->total - $item->valor;
 
         Carrinho::findOrFail($id)->delete();
+
+        return back();
     }
+    
 }

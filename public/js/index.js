@@ -9,12 +9,3 @@ $(document).ready(function() {
     });
 
 });
-
-// $("#deletar-carrinho").hover(
-//     function() {
-//         $(this).addClass("deletar-cart");
-//     },
-//     function() {
-//         $(this).removeClass("deletar-cart");
-//     }
-// );
